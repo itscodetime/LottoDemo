@@ -5,6 +5,8 @@ VisualStudioVersion = 25.0.1705.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LottoDemo", "LottoDemo\LottoDemo.csproj", "{B7FF4A0B-F5CF-47C5-B925-8320D51FDA50}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LottoDemoTest", "LottoDemoTest\LottoDemoTest.csproj", "{8EF6B6F4-4B96-43B7-97B8-EE5B4DAB7B23}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{B7FF4A0B-F5CF-47C5-B925-8320D51FDA50}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7FF4A0B-F5CF-47C5-B925-8320D51FDA50}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7FF4A0B-F5CF-47C5-B925-8320D51FDA50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EF6B6F4-4B96-43B7-97B8-EE5B4DAB7B23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EF6B6F4-4B96-43B7-97B8-EE5B4DAB7B23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EF6B6F4-4B96-43B7-97B8-EE5B4DAB7B23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EF6B6F4-4B96-43B7-97B8-EE5B4DAB7B23}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

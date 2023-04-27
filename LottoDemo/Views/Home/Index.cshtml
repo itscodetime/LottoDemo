@@ -1,9 +1,116 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model LottoResponse
+@{
+    ViewData["Title"] = "Lotto details";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+
+<!--<div>
+    <section>
+        @using (Html.BeginForm("PostLotteryInfo", "Home"))
+
+        {
+            <input type="text" value="GoldenCasket" name="GoldenCasket" disabled />
+
+            <select id="lottery-types" >
+                <option value="TattsLotto"/>
+                <option value="MonWedLotto"/>
+                <option value="OzLotto"/>                
+                <option value="Powerball"/>
+                <option value="Super66"/>
+
+            </select>
+            <datalist id="max-draws">
+                <option value="1"/>
+                <option value="2"/>
+                <option value="3"/>
+                <option value="4"/>
+                <option value="5"/>
+                
+
+            </datalist>
+
+            <button type="submit" value="Search"/>
+
+        }
+    </section>
+</div>--->
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayName("ProductId")</th>
+            <th>@Html.DisplayName("DrawNumber")</th>
+            <th>@Html.DisplayName("DrawDisplayName")</th>
+            <th>@Html.DisplayName("DrawDate")</th>
+            <th>@Html.DisplayName("Draw Type")</th>
+            <th>@Html.DisplayName("Div1Amount")</th>
+            <th>@Html.DisplayName("IsDiv1Estimated")</th>
+            <th>@Html.DisplayName("IsDiv1Unknown")</th>
+            <th>@Html.DisplayName("DrawCloseDateTimeUTC")</th>
+            <th>@Html.DisplayName("DrawEndSellDateTimeUTC")</th>
+            <th>@Html.DisplayName("DrawCountDownTimerSeconds")</th>
+            <th>@Html.DisplayName("DaysOfWeek")</th>
+            <th>@Html.DisplayName("PrizeBoostPercent")</th>
+            <th>@Html.DisplayName("PrizeBoost")</th>
+            <th>@Html.DisplayName("DrawLogoURL")</th>
+        </tr>
+
+
+    </thead>
+
+    <tbody>
+       @foreach(var row in Model.Draws)
+{
+                <tr>
+                    <td>
+                        @row.ProductId
+                    </td>
+                    <td>
+                        @row.DrawNumber
+                    </td>
+                    <td>
+                        @row.DrawDisplayName
+                    </td>
+                    <td>
+                        @row.DrawDate
+                    </td>
+
+                    <td>
+                        @row.DrawType
+                    </td>
+                    <td>
+                        @row.Div1Amount
+                    </td>
+                    <td>
+                        @row.IsDiv1Estimated
+                    </td>
+                    <td>
+                        @row.IsDiv1Unknown
+                    </td>
+                    <td>
+                        @row.DrawCloseDateTimeUTC
+                    </td>
+                    <td>
+                        @row.DrawEndSellDateTimeUTC
+                    </td>
+                    <td>
+                        @row.DrawCountDownTimerSeconds
+                    </td>
+                    <td>
+                        @row.DaysOfWeek
+                    </td>
+                    <td>
+                        @row.PrizeBoostPercent %
+                    </td>
+                    <td>
+                        @row.PrizeBoost
+                    </td>
+                    <td>
+                        @row.DrawLogoUrl
+                    </td>
+                </tr>
+}
+    </tbody>
+</table>
+
 
